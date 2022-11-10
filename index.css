@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    background-image: url("img/table.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-color: green;
+    color: white;
+    text-shadow: -1px 1px 3px black;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0 2px 10px black;
+    word-spacing: 10px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+img {
+    box-shadow: 0 1px 5px black;
+    height: 300px;
+    width: calc(300px * 5 / 7);
+}
+
+img:nth-of-type(1) {
+    margin-bottom: 50px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+div.placeholder {
+    padding: 5px;
+    border: 5px solid firebrick;
+    border-radius: 15px;
+    height: 300px;
+    width: calc(300px * 5 / 7);
+}
+
+div.placeholder:nth-of-type(1) {
+    margin-bottom: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+button {
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 0 10px;
+    background-color: yellow;
+    border: 2px solid orange;
+    box-shadow: 1px -1px 20px orange inset;
+}
+
+button:hover {
+    background-color: orange;
+    border: 2px solid yellow;
+    box-shadow: 1px -1px 20px yellow inset;
+}
