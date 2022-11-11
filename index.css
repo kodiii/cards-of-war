@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-html, body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,8 +36,8 @@ h3{
 
 img {
     box-shadow: 0 1px 5px black;
-    height: 300px;
-    width: calc(300px * 5 / 7);
+    height: 200px;
+    width: calc(200px * 5 / 7);
 }
 
 img:nth-of-type(1) {
@@ -48,22 +48,22 @@ img:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 100vh;
 }
 
 #cards {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-between;
 }
 
 div.placeholder {
     padding: 5px;
     border: 5px solid firebrick;
     border-radius: 15px;
-    height: 300px;
-    width: calc(300px * 5 / 7);
+    height: 200px;
+    width: calc(200px * 5 / 7);
 }
 
 div.placeholder:nth-of-type(1) {
