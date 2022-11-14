@@ -8,7 +8,7 @@ function handleClick() {
             console.log(data)
             deckId = data.deck_id
         })
-        message.innerText = "New DECK generated!"
+    message.innerText = "New DECK generated, click 'Draw' button!"
 }
 
 document.getElementById("new-deck").addEventListener("click", handleClick)
@@ -42,11 +42,12 @@ function determineCardWinner(card1, card2) {
     const card2ValueIndex = valueOptions.indexOf(card2.value)
 
     if (card1ValueIndex > card2ValueIndex) {
+        console.log("COMPUTER WIN !")
         message.innerText = "COMPUTER WIN!"
     } else if (card1ValueIndex < card2ValueIndex) {
-        console.log("PLAYER WIN!")
+        console.log("PLAYER WIN !")
         message.innerText = "PLAYER WIN!"
     } else {
-        message.innerText = "TYE"
+        message.innerText = "WAR !"
     }
 }
