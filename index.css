@@ -21,10 +21,14 @@ h1 {
     text-align: center;
     text-shadow: 0 2px 10px black;
     word-spacing: 10px;
-    color: white;
     font-family: 'Anton', sans-serif;
     font-size: 50px;
     margin-top: 100px;
+}
+
+h2#cards-remaining {
+    display: none;
+    font-size: 40px;
 }
 
 h3{
